@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+        <LinearLayout
+            android:id="@+id/navigationContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/navigationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="visible"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:gravity="right"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Close"
+                    android:id="@+id/closeWin"
+                    android:background="@color/white"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/filePathLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="visible"
+                android:layout_weight="8"
+                android:orientation="horizontal"
+                android:gravity="left"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="File Path "
+                    android:id="@+id/filePathTxt"
+                    android:background="@color/white"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="File Path"
+                    android:id="@+id/filePath"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_horizontal"/>
+            </LinearLayout>
+<!--    <com.joanzapata.pdfview.PDFView-->
+<!--        android:id="@+id/pdfView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="95"/>-->
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/pdfView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="82"/>
+
+            <LinearLayout
+                android:id="@+id/deleteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="visible"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:gravity="right"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Delete File"
+                    android:id="@+id/deleteFile"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>

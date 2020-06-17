@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/color_chart_bg"
+              android:gravity="fill"
+              android:orientation="vertical"
+    >
+   <!--<View-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="5dp"-->
+       <!--android:layout_marginLeft="5dp"-->
+       <!--android:layout_marginRight="5dp"-->
+       <!--android:background="@drawable/date_view_rounded_border"/>-->
+ <!--<ImageView-->
+     <!--android:id="@+id/tab_img_select_icon"-->
+     <!--android:layout_width="match_parent"-->
+     <!--android:layout_height="5dp"-->
+     <!--android:layout_marginTop="0dp"-->
+     <!--android:scaleType="fitXY"-->
+     <!--android:src="@drawable/ic_tab_selected_tab" />-->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/color_chart_bg"
+       android:gravity="center"
+       android:orientation="vertical"
+       android:paddingBottom="5dp"
+       android:paddingTop="0dp">
+
+      <ImageView
+          android:id="@+id/tab_img_icon"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:contentDescription="@string/app_name"
+          android:scaleType="fitCenter"
+          />
+
+      <TextView
+          android:id="@+id/tab_tv_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorlist_btn_tab"
+          android:textSize="@dimen/acti_main_ts_tabtxt"
+          android:scaleType="fitCenter"/>
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/totalSalesLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:id="@+id/customerDetailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        >
+
+        <TextView
+            android:id="@+id/customerName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_18dp"
+            android:textSize="@dimen/_14dp"
+            />
+        <TextView
+            android:id="@+id/customerAddress"
+            android:layout_width="match_parent"
+            android:maxLines="4"
+            android:lines="4"
+            android:layout_height="@dimen/_18dp"
+            android:textSize="@dimen/_14dp"
+            />
+        <TextView
+            android:id="@+id/customerState"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_18dp"
+            android:textSize="@dimen/_14dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            android:gravity="left"
+            >
+
+
+            <TextView
+                android:id="@+id/legderDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_14dp"/>
+
+            <!--<TextView-->
+            <!--android:id="@+id/legderDueDate"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="type"-->
+            <!--android:textColor="@color/colorGray"-->
+            <!--android:textSize="@dimen/_14dp"-->
+            <!--android:layout_margin="@dimen/_3dp"/>-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            android:gravity="left">
+            <TextView
+                android:id="@+id/ledgerRef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_14dp"/>
+            <TextView
+                android:id="@+id/ledgerType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_14dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.inqbarna.tablefixheaders.TableFixHeaders
+            android:id="@+id/tablefixheaders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5dp"
+            android:scrollbars="horizontal|vertical" />
+    </RelativeLayout>
+</LinearLayout>

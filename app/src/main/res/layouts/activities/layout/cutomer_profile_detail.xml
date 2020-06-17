@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+        <LinearLayout
+            android:id="@+id/navigationContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100"
+            android:orientation="vertical"
+            >
+
+<!-- Close button-->
+            <LinearLayout
+                android:id="@+id/navigationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="visible"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:gravity="right"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Close"
+                    android:id="@+id/closeWin"
+                    android:background="@color/white"/>
+            </LinearLayout>
+<!--            profile detail-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:textColor="@color/colorPrimary"
+                  android:text="Profile"
+                  android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    />
+            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/nameLable"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="30"
+                        android:gravity="center|left"
+                        android:text="Name(Alias)"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/nameText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:gravity="center"
+                        android:text="Name"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/addressLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="30"
+                    android:gravity="center|left"
+                    android:text="Address"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/addressText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/stateLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="30"
+                    android:gravity="center|left"
+                    android:text="State"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/stateText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/pincodeLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="30"
+                    android:gravity="center|left"
+                    android:text="Pincode"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/pincodeText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Tax Registration"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pan"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/panLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="30"
+                    android:gravity="center|left"
+                    android:text="Pan"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/panText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/gst"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/gstLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="30"
+                    android:gravity="center|left"
+                    android:text="GSTIN/UIN"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/gstText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Credit Registration"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/creditPeroid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/creditPeroidLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="30"
+                    android:gravity="center|left"
+                    android:text="Credit Peroid"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/creditPeroidText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/creditLimit"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/creditLimitLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="30"
+                    android:gravity="center|left"
+                    android:text="Credit Limit"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/creditLimitText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Credit Rating"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/creditLink"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/creditLinkLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="30"
+                    android:gravity="center|left"
+                    android:text="Credit Link"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/creditLinkText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    />
+            </LinearLayout>
+<!--            Bank Detail-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Bank Detail"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/accountNo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/accountNoLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="30"
+                    android:gravity="center|left"
+                    android:text="Account No"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/accountNoText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:text="11111"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ifscCode"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/ifscCodeLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="30"
+                    android:gravity="center|left"
+                    android:text="IFSC Code"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/ifscCodeText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:text="B001"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bankName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/bankNameLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="30"
+                    android:gravity="center|left"
+                    android:text="Bank Name"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/bankNameText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:text="Dena Bank"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/branchName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/branchNameLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="30"
+                    android:gravity="center|left"
+                    android:text="Branch Name"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/branchNameText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:text="no one"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/bankAddress"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/bankAddressLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="30"
+                    android:gravity="center|left"
+                    android:text="Bank Addres"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/bankAddressText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:text="UNKNOWN"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

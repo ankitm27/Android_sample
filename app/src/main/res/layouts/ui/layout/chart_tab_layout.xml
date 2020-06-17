@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="1dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:weightSum="100"-->
+        <!--android:background="@color/colorGrayLight"-->
+        <!--android:orientation="horizontal">-->
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/threeM_tab"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="25"-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/threeM_Text"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="3M"-->
+                <!--android:textSize="8dp" />-->
+            <!--<View-->
+                <!--android:id="@+id/threeM_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/white" />-->
+        <!--</LinearLayout>-->
+
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/sixM_tab"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="25"-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/sixM_Text"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="6M"-->
+                <!--android:textSize="8dp" />-->
+            <!--<View-->
+                <!--android:id="@+id/sixM_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/white" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ytd_tab"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="25"-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/ytd_text"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="YTD"-->
+                <!--android:textSize="8dp" />-->
+            <!--<View-->
+                <!--android:id="@+id/ytd_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/white" />-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/fiveY_tab"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="25"-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/fiveY_text"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="5Y"-->
+                <!--android:textSize="8dp" />-->
+            <!--<View-->
+                <!--android:id="@+id/fiveY_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/white" />-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/chart_filter_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
+        android:visibility="visible"
+        app:tabContentStart="12dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextAppearance="@style/chartFilterTabLayoutTextAppearance"
+        app:tabTextColor="@color/colorGray"
+        app:tabIndicatorColor="@color/chart5"
+        android:foregroundGravity="left"/>
+    <LinearLayout
+        android:id="@+id/chart_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

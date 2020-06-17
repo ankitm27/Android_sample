@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ui_fragusr_item_sex" type="id"/>
+    <item name="ui_fragusr_item_height" type="id"/>
+    <item name="ui_fragusr_item_weight" type="id"/>
+    <item name="ui_fragusr_item_walkstride" type="id"/>
+    <item name="ui_fragusr_item_runstride" type="id"/>
+    <item name="ui_fragusr_item_steptarget" type="id"/>
+    <item name="ui_fragusr_item_sitlong" type="id"/>
+    
+    <item name="ui_fragusr_switch_callnotify" type="id"/>
+    <item name="ui_fragusr_switch_smsnotify" type="id"/>
+    <item name="ui_fragusr_switch_timeformate" type="id"/>
+    
+    <item name="ui_fraga_alarmset_item1" type="id"/>
+    <item name="ui_fraga_alarmset_item2" type="id"/>
+    <item name="ui_fraga_alarmset_item3" type="id"/>
+    <item name="ui_fraga_alarmset_item4" type="id"/>
+
+    <!-- settings -->
+    <item name="settings_cellview_scanning" type="id"/>
+    <item name="settings_cellview_notification" type="id"/>
+    <item name="settings_cellview_removedevice" type="id"/>
+    <item name="settings_cellview_advancedsetting" type="id"/>
+    <item name="settings_cellview_firmwareupdate" type="id"/>
+
+    <item name="notificationsettings_cellview_sms" type="id"/>
+    <item name="notificationsettings_cellview_tel" type="id"/>
+
+
+    <!-- 设备未连接 -->
+    <item name="err_id_disconnected" type="id"/>
+    <!-- 连接断开 -->
+    <item name="err_id_connection_break" type="id"/>
+    <!-- 设备应答错误 -->
+    <item name="err_id_response_error" type="id"/>
+    <!-- 指令执行超时 -->
+    <item name="err_id_command_timeout" type="id"></item>
+
+    <!-- 用于指定所有BaseFragment中的UITitleBar -->
+    <item name="fragment_base_titleBar" type="id"/>
+    
+    <!-- ViewType for UITableViewCell -->
+    <item name="cell_viewType_picker" type="id"/>
+    <item name="cell_viewType_selectableCell" type="id"/>
+    <item name="cell_viewType_userPortrait" type="id"/>
+</resources>

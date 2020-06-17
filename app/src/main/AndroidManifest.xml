@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cbat.cbat">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 允许应用通过GPS访问精确位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" tools:node="remove" />
+    <!-- permission-group.STORAGE -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Dark"
+
+        tools:replace="android:theme"
+        >
+        <activity
+            android:name=".ui.login.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.accounts.customerList.details.CustomerListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+            <intent-filter>
+                <category android:name="android.intent.category.LOGIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.navigation.ServicesDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+        <activity
+            android:name=".ui.navigation.CustomerDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+        <activity
+            android:name=".ui.navigation.InvoiceDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+        <activity
+            android:name=".ui.navigation.openOrderInvoiceDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+        <activity
+            android:name=".ui.navigation.LedgerDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+
+
+        <activity
+            android:name=".ui.navigation.MainActivity"
+            android:theme="@style/AppTheme.Dark"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".ui.login.ChangePassActivity"
+            android:label="Home Tab"
+            android:theme="@style/AppTheme.Dark"
+            />
+        <activity
+            android:name=".ui.login.ForgetPassActivity"
+            android:label="Home Tab"
+            android:theme="@style/AppTheme.Dark"
+            />
+        <activity
+            android:name=".ui.login.SignupActivity"
+            android:label="Home Tab"
+            android:theme="@style/AppTheme.Dark"
+            />
+
+
+        <activity
+            android:name=".ui.services.recievable.details_receivable.CustomerDetailActivity_R"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+        <activity
+            android:name=".ui.services.sales.LedgerReceivableDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+        <activity
+            android:name=".ui.services.sales.details_sales.openOrderLedgerRecievableDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+        <activity
+            android:name=".ui.services.recievable.details_receivable.InvoiceDetailActivity_R"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+        <activity
+            android:name=".ui.services.recievable.details_receivable.LedgerDetailActivity_R"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+
+        <activity
+            android:name=".ui.widgets.sidedrawer.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+        <activity
+            android:name=".ui.widgets.sidedrawer.SettingNewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+
+        <activity
+            android:name=".ui.login.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+        <activity
+            android:name=".ui.services.sales.CollectionLedgerDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+        <activity
+            android:name=".ui.accounts.customerList.details.CustomerLedgerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+        <activity
+            android:name=".ui.accounts.customerList.details.InvoiceLedgerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+
+    </application>
+
+</manifest>

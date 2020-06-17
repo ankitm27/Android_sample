@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_5dp"
+    android:layout_marginRight="@dimen/_5dp">
+
+    <LinearLayout
+        android:id="@+id/vg_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/cell_white_border_bottom_right_gray"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/cb_order_sections_asc"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/order_sections_asc" />-->
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12dp"
+            tools:text="text" />
+        <!--<TextView-->
+        <!--android:id="@+id/tv_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:maxLines="2"-->
+        <!--android:paddingLeft="@dimen/_10dp"-->
+        <!--android:paddingRight="@dimen/_10dp"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--tools:text="text" -->
+        <!--android:textSize="@dimen/_12dp"/>-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_order"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_order_desc"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_above="@id/midShort"
+            android:adjustViewBounds="true"
+            android:src="@drawable/up_grey_48"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:id="@+id/midShort"
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="@dimen/_2dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_order_asc"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_below="@id/midShort"
+            android:adjustViewBounds="true"
+            android:src="@drawable/down_grey_48"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

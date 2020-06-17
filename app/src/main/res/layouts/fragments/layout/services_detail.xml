@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/service_details">
+
+    <FrameLayout
+        android:id="@+id/layout_service_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/main_tabBar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#c7c7cc" />
+
+    <!--<com.cbat.cbat.ui.widgets.UIFragmentTabHost-->
+        <!--android:id="@+id/dw_tabhost"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/color_tabbar_bg">-->
+
+        <!--<FrameLayout-->
+            <!--android:id="@android:id/tabcontent"-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="0"-->
+            <!--android:background="@color/color_tabbar_bg"-->
+            <!--/>-->
+    <!--</com.cbat.cbat.ui.widgets.UIFragmentTabHost>-->
+
+</LinearLayout>

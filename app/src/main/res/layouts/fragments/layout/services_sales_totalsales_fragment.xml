@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/totalSalesLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_weight="100">
+    <!--<HorizontalScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/_0dp"-->
+        <!--android:layout_weight="5"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="@dimen/_2dp"-->
+        <!--&gt;-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    android:weightSum="100"
+    android:scrollbars="horizontal"
+    android:id="@+id/mapLegend"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layoutDirection="ltr"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/_4dp"
+
+    >
+    <Button
+        android:id ="@+id/btn100to50"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:text="@string/salesGreater50"
+        android:background="@color/chart1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_10dp"
+        android:textAlignment="center"
+
+        />
+    <Button
+        android:id ="@+id/btn50to30"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:text="@string/sales50_30"
+        android:background="@drawable/sales_50_30"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_10dp"
+        android:textAlignment="center"
+
+        />
+    <Button
+        android:id ="@+id/btn30to20"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:text="@string/sales30_20"
+        android:background="@drawable/sales_30_20"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_10dp"
+        android:textAlignment="center"
+
+        />
+    <Button
+        android:id ="@+id/btn20to10"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:text="@string/sales20_10"
+        android:background="@drawable/sales_20_10"
+        android:gravity="center"
+        android:textSize="@dimen/_10dp"
+
+        />
+    <Button
+        android:id ="@+id/btn10to0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:text="@string/sales10_0"
+        android:background="@drawable/sales_10_0"
+        android:gravity="center"
+        android:textSize="@dimen/_10dp"
+
+        />
+    <!--<Button-->
+        <!--android:id ="@+id/salesless5"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/salesGreater6"-->
+        <!--android:background="@drawable/sales_less_five"-->
+
+        <!--/>-->
+</LinearLayout>
+    <!--</HorizontalScrollView>-->
+
+    <FrameLayout
+        android:id="@+id/totalSalesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:layout_weight="87">
+
+        <!--<com.agrawalsuneet.svgloaderspack.loaders.SVGLoader-->
+            <!--android:id="@+id/svg_loader"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="@dimen/_20dp"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:svgloader_fillColorsArray="@array/google_logo_colors"-->
+            <!--app:svgloader_fillTime="2000"-->
+            <!--app:svgloader_interpolator="@android:anim/decelerate_interpolator"-->
+            <!--app:svgloader_markerLength="10dp"-->
+            <!--app:svgloader_shapesStringArray="@array/google_logo_path"-->
+            <!--app:svgloader_timePerShape="3000"-->
+            <!--app:svgloader_viewportHeight="1500"-->
+            <!--app:svgloader_viewportWidth="800" />-->
+
+        <jp.gr.java_conf.androtaku.geomap.GeoMapView
+            android:id="@+id/totalSalesGeoMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"/>
+
+    </FrameLayout>
+    <!--<HorizontalScrollView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="20"-->
+        <!--android:id="@+id/scrollState"-->
+        <!--android:layout_below="@+id/totalSalesContainer"-->
+        <!--android:layout_gravity="center_horizontal"-->
+
+        <!--&gt;-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/stateList"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="@dimen/_5dp">-->
+
+        <!--</LinearLayout>-->
+
+    <!--</HorizontalScrollView>-->
+    <!--<com.github.florent37.materialleanback.MaterialLeanBack-->
+        <!--android:id="@+id/materialLeanBack"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="20"-->
+        <!--app:mlb_background="@color/white"-->
+        <!--app:mlb_lineSpacing="10dp"-->
+        <!--app:mlb_paddingBottom="10dp"-->
+        <!--app:mlb_paddingLeft="10dp"-->
+        <!--app:mlb_paddingRight="10dp"-->
+        <!--app:mlb_paddingTop="5dp"-->
+        <!--app:mlb_titleColor="@android:color/white" />-->
+    <!--<com.github.florent37.materialleanback.MaterialLeanBack-->
+        <!--android:id="@+id/materialLeanBack"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="15"-->
+        <!--android:divider="@null"-->
+        <!--android:dividerHeight="0dp"-->
+        <!--app:mlb_background="@color/white"-->
+        <!--app:mlb_lineSpacing="2dp"-->
+
+        <!--app:mlb_paddingBottom="2dp"-->
+        <!--app:mlb_paddingLeft="2dp"-->
+        <!--app:mlb_paddingRight="2dp"-->
+        <!--app:mlb_paddingTop="5dp"-->
+
+        <!--app:mlb_overlapCards="true"-->
+        <!--app:mlb_titleSize="@dimen/_10dp"-->
+        <!--app:mlb_titleColor="@android:color/white"-->
+        <!--app:mlb_cardElevationEnlarged="10"-->
+        <!--app:mlb_cardElevationReduced="5"-->
+        <!--app:mlb_animateCards="true"-->
+        <!--/>-->
+    <!---->
+    <HorizontalScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:scrollbars="none"
+        android:layoutDirection="ltr"
+        android:layout_gravity="center"
+
+        >
+        <LinearLayout
+            android:id="@+id/casts_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layoutDirection="ltr"
+            android:layout_gravity="center"
+
+            />
+    </HorizontalScrollView>
+</LinearLayout>

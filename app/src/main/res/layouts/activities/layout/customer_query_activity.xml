@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGray"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:translationZ="10dp"
+        android:elevation="25dp"
+        android:weightSum="100"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:background="@color/colorPrimaryDark">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Query"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/round_corner"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    >
+
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                >
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:background="@color/colorPrimaryDark"
+                >
+                <Button
+                    android:id="@+id/close"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Close"
+                    android:textColor="@color/colorLightGray"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/black_round_corner"
+                    android:layout_marginTop="15dp"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="39"
+                android:background="@color/colorPrimary"
+                >
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90"
+            android:weightSum="100"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:weightSum="100"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"/>
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                  android:layout_margin="5dp"
+
+                    android:background="@drawable/email"
+                    android:layout_gravity="center"
+
+                    >
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_weight="60"
+                    android:layout_height="match_parent"
+                    android:text="Query?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22dp"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                >
+                <EditText
+                    android:id="@+id/subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Subject:"
+                    android:textColor="@color/black"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:paddingLeft="5dp"
+                    android:inputType="text"
+                    android:background="@drawable/round_corner_button"
+
+                    >
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_corner_button"
+                >
+                <EditText
+                    android:id="@+id/textArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:hint="Enter Your Query?"
+                    android:inputType="textMultiLine"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:lines="20"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:scrollHorizontally="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:background="@drawable/round_corner_button"
+                >
+<Button
+    android:id="@+id/send"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="50"
+    android:text="Send"
+    android:textSize="20dp"
+
+    android:textColor="@color/colorWhite"
+    android:background="@drawable/button_round"
+    android:layout_gravity="center"
+
+    android:layout_marginLeft="55dp"
+    android:layout_marginTop="35dp"
+    android:layout_marginBottom="45dp"
+    android:layout_marginRight="10dp"
+    android:translationZ="10dp"
+    android:elevation="25dp"
+    >
+
+</Button>
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Cancel"
+                    android:textSize="20dp"
+
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/round_black"
+
+                    android:layout_marginRight="55dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="45dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_gravity="center"
+                    android:translationZ="10dp"
+                    android:elevation="25dp"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

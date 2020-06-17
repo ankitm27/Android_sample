@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/totalSalesLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:id="@+id/customerChartLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/chartText"
+        android:layout_margin="5dp"
+        android:layout_weight="37"
+        android:orientation="horizontal" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="6"
+    android:elevation="@dimen/_5dp"
+    android:translationZ="@dimen/_5dp"
+    android:layout_marginLeft="@dimen/_5dp"
+    android:layout_marginRight="@dimen/_5dp"
+    android:background="@drawable/layout_filter_bg"
+    android:weightSum="100"
+    android:orientation="horizontal"
+    android:layoutDirection="ltr"
+    >
+    <LinearLayout
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:weightSum="100"
+        android:gravity="center">
+
+
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="22"
+        android:text="TH"
+        android:gravity="center"
+        android:layout_margin="@dimen/_6dp"
+        android:id="@+id/th"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_6dp"
+            android:layout_weight="22"
+            android:gravity="center"
+            android:id="@+id/lakh"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_6dp"
+            android:layout_weight="22"
+            android:gravity="center"
+            android:id="@+id/cr"/>
+    </LinearLayout>
+    <View
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_4dp"
+        android:background="@color/white"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="59"
+        android:weightSum="100"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_6dp"
+            android:layout_weight="18"
+            android:gravity="center"
+            android:text="5"
+            android:id="@+id/top5"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_6dp"
+            android:layout_weight="18"
+            android:gravity="center"
+            android:text="10"
+            android:id="@+id/top10"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_6dp"
+            android:layout_weight="18"
+            android:gravity="center"
+            android:text="15"
+            android:id="@+id/top15"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_6dp"
+            android:layout_weight="18"
+            android:gravity="center"
+            android:text="ALL"
+            android:id="@+id/alltop"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="57"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <com.inqbarna.tablefixheaders.TableFixHeaders
+            android:id="@+id/tablefixheaders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10dp"
+            android:scrollbars="horizontal|vertical" />
+    </RelativeLayout>
+
+</LinearLayout>

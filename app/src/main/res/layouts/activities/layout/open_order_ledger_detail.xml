@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/details_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary" >
+        <RelativeLayout
+            android:id="@+id/navigationContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/navigationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/navigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/navigationHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="3dp"
+                        android:text="Home"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/arrow"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/navigationHome"
+                        android:src="@drawable/double_left" />
+
+                    <TextView
+                        android:id="@+id/navigationCurrent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/arrow"
+                        android:text="Title"
+                        android:textColor="@color/chart5" />
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/arrow2"-->
+                    <!--android:layout_width="15dp"-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:layout_marginLeft="3dp"-->
+                    <!--android:layout_marginRight="3dp"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:layout_toRightOf="@id/navigationCurrent"-->
+                    <!--android:src="@drawable/double_left" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/navigationCurrentMain"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_toRightOf="@id/arrow2"-->
+                    <!--android:text="Title"-->
+                    <!--android:textColor="@color/white" />-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/arrow3"-->
+                    <!--android:layout_width="15dp"-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:layout_marginLeft="3dp"-->
+                    <!--android:layout_marginRight="3dp"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:layout_toRightOf="@id/navigationCurrentMain"-->
+                    <!--android:src="@drawable/double_left" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/navigationCurrentFinal"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_toRightOf="@id/arrow3"-->
+                    <!--android:text="Title"-->
+                    <!--android:textColor="@color/chart5" />-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/navigationTitleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/navigation">
+                    <TextView
+                        android:id="@+id/navigationTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:gravity="center_horizontal"
+                        android:text="Cutomer List"
+                        />
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/navigatonTimeFilter"-->
+                    <!--android:layout_width="35dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/calendar_80"-->
+                    <!--android:paddingRight="@dimen/_10dp"-->
+                    <!--android:layout_toLeftOf="@id/navigatonShare"-->
+                    <!--/>-->
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/navigatonShareLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center_horizontal">
+                    <ImageView
+                        android:id="@+id/navigatonShare"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/share_white"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/navigatonTimeFilter"-->
+                    <!--android:layout_width="35dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/calendar_80"-->
+                    <!--android:paddingRight="@dimen/_10dp"-->
+                    <!--android:layout_toLeftOf="@id/navigatonShare"-->
+                    <!--/>-->
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <FrameLayout
+        android:id="@+id/ledger_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal" />
+
+
+
+</RelativeLayout>

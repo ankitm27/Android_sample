@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义控件TimeButton的xml属性 -->
+    <!--<declare-styleable name="DateSelectWidget">-->
+        <!--<attr name="dateText" format="reference" />-->
+        <!--<attr name="dateSize" format="reference" />-->
+        <!--<attr name="dateColor" format="reference" />-->
+        <!--<attr name="leftBtn" format="reference" />-->
+        <!--<attr name="rightBtn" format="reference" />-->
+    <!--</declare-styleable>-->
+    
+    <!-- 自定义控件TimeButton的xml属性 -->
+    <!--<declare-styleable name="ItemConfigView">-->
+    <!--<attr name="firstText" format="reference" />-->
+    <!--<attr name="firstTextColor" format="reference" />-->
+    <!--<attr name="firstTextSize" format="reference" />-->
+    <!--<attr name="endText" format="reference" />-->
+    <!--<attr name="endTextColor" format="reference" />-->
+    <!--<attr name="endTextSize" format="reference" />-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+
+    <!-- ......... UITitleBar.java .......... -->
+    <declare-styleable name="UITitleBar">
+        <!-- 标题文字 -->
+        <attr name="mainTitleText" format="string|reference" />
+        <!-- 左侧按钮文字 -->
+        <attr name="leftTitleText" format="string|reference" />
+        <!-- 右侧按钮文字 -->
+        <attr name="rightTitleText" format="string|reference" />
+        <!-- 左侧按钮图标 -->
+        <attr name="leftTitleDrawable" format="reference" />
+        <!-- 右侧按钮图标 -->
+        <attr name="rightTitleDrawable" format="reference" />
+        <!-- 标题栏的样式 -->
+        <attr name="titleBarStyle">
+            <flag name="mainTitle" value="0x01"/>
+            <flag name="leftTitle" value="0x02"/>
+            <flag name="rightTitle" value="0x04"/>
+        </attr>
+    </declare-styleable>
+    
+    
+    <!-- ......... UIDateSelectionBar.java .......... -->
+    <declare-styleable name="UIDateSelectionBar">
+        <attr name="dateTextColor" format="reference" />
+        <attr name="dateTextSize"  format="dimension" />
+        <attr name="leftDrawable" format="reference" />
+        <attr name="rightDrawable" format="reference" />
+    </declare-styleable>
+
+    <!-- .............. UICircularProgressBar.java .............. -->
+    <declare-styleable name="UICircularProgressBar">
+        <attr name="progressTrackColor" format="color|reference" />
+        <attr name="progressTintColor" format="color|reference" />
+        <attr name="progressLineWidth" format="dimension|reference" />
+        <attr name="progress" format="float" />
+    </declare-styleable>
+    
+    <!-- ..............UISportAttributeCell.java............... -->
+    <declare-styleable name="UISportAttributeCell">
+        <attr name="attrCellNameText" format="string|reference" />
+        <attr name="attrCellValueText" format="string|reference" />
+        <attr name="attrCellUnitText" format="string|reference" />
+        <attr name="imageDrawable" format="reference" />
+    </declare-styleable>
+
+    <!-- .............. UISleepDetailCell1.java .............. -->
+    <declare-styleable name="UISleepDetailCell1">
+        <attr name="sleepCellNameText" format="string|reference" />
+        <attr name="sleepCellHourText" format="string|reference" />
+        <attr name="sleepCellHourUnitText" format="string|reference" />
+        <attr name="sleepCellMinuteText" format="string|reference" />
+        <attr name="sleepCellMinuteUnitText" format="string|reference" />
+        <attr name="sleepImageDrawable" format="reference" />
+    </declare-styleable>
+
+    <!-- .............. UIDetailedSleepCell2.java .............. -->
+    <declare-styleable name="UISleepDetailCell2">
+        <attr name="sleepCell2NameText" format="string|reference" />
+        <attr name="sleepCell2TimeText" format="string|reference" />
+        <attr name="sleepCell2ImageDrawable" format="reference" />
+    </declare-styleable>
+
+    <!-- ......... UIExerciseAttrCell.java .......... -->
+    <declare-styleable name="UIExerciseAttrCell" >
+        <attr name="exerciseAttrCellText1" format="string|reference" />
+        <attr name="exerciseAttrCellText1Size" format="dimension" />
+        <attr name="exerciseAttrCellText1Color" format="color|reference" />
+        <attr name="exerciseAttrCellText2" format="string|reference" />
+        <attr name="exerciseAttrCellText2Size" format="dimension" />
+        <attr name="exerciseAttrCellText2Color" format="color|reference" />
+        <attr name="exerciseAttrCellText3" format="string|reference" />
+        <attr name="exerciseAttrCellText3Size" format="dimension" />
+        <attr name="exerciseAttrCellText3Color" format="color|reference" />
+    </declare-styleable>
+
+</resources>

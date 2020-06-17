@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingTop="45dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="57"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.inqbarna.tablefixheaders.TableFixHeaders
+            android:id="@+id/tablefixheaders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10dp"
+            android:scrollbars="horizontal|vertical" />
+    </RelativeLayout>
+</LinearLayout>

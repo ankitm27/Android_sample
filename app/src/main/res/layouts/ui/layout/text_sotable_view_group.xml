@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_5dp"
+    android:layout_marginRight="@dimen/_5dp"
+    android:layout_alignParentRight="true">
+
+    <LinearLayout
+        android:id="@+id/vg_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cell_white_border_bottom_right_gray"
+        android:layout_alignParentRight="true"
+
+        >
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="left"-->
+        <!--android:maxLines="2"-->
+        <!--android:paddingLeft="@dimen/_10dp"-->
+        <!--android:paddingRight="@dimen/_10dp"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--tools:text="text" />-->
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/_3dp"
+            android:paddingRight="@dimen/_3dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12dp"
+            tools:text="text" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_order"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:gravity="left">
+
+        <ImageView
+            android:id="@+id/iv_order_desc"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_above="@id/sortMid"
+            android:src="@drawable/up_grey_48"
+            android:adjustViewBounds="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <View
+            android:id="@+id/sortMid"
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="@dimen/_2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_order_asc"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_below="@id/sortMid"
+            android:src="@drawable/down_grey_48"
+            android:adjustViewBounds="true"
+            android:layout_alignParentLeft="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>
